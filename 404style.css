@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+html, body {
+    
+    position: relative;
+    width: 1440px;
+    height: 1080px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header{
+    position: absolute;
+    height: 25px;
+    left: 77px;
+    top: 40px;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    
+    color: #333333;
+    
+}
+
+.container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 100px 100px;
+            grid-template-areas:
+                "a  e"
+                "a  b"
+                "a  c";
+    
+}
+#picture{
+
+    position: absolute;
+    left: 5.35%;
+    right: 57.21%;
+    top: 24.54%;
+    bottom: 34.03%;  
+    grid-area: a;  
+}
+
+#title{
+    position: absolute;
+    width: 586px;
+    height: 190px;
+    left: 735px;
+    top: 265px;
+
+    font-family: monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+    grid-area: e;
+}
+
+
+#content{
+    position: absolute;
+    width: 381px;
+    height: 108px;
+    left: 736px;
+    top: 491px;
+
+    font-family: monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    grid-area: b;
+}
+
+#blackbox{
+    position: absolute;
+    width: 216px;
+    height: 68px;
+    left: 740px;
+    top: 663px;
+    background-color: black;
+    grid-area: c;
+    
+}
+
+
+#blackboxContent
+{
+    position: absolute;
+    
+    font-family: monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 24px 43px 23px 43px;
+    text-align:center;
+    /* identical to box height */
+    
+
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+footer{
+    position: absolute;
+    height: 17px;
+    left: 577px;
+    top: 1039px;
+    font-family:    Montserrat;
+    font-style:     normal;
+    font-weight:    500;
+    font-size:      14px;
+    line-height:    17px;
+    
+    text-align: center;
+    color: #BDBDBD;
+
+}
